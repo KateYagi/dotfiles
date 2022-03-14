@@ -180,8 +180,8 @@ exec --no-startup-id picom --experimental-backends
 exec feh --bg-max ~/wallpaper
 
 # Browser
- bindsym $mod+Shift+Return exec chromium
-# bindsym $mod+Shift+Return exec alacritty -e lynx -cookies=false
+ bindsym $mod+Ctrl+Return exec chromium
+ bindsym $mod+Shift+Return exec alacritty -e lynx -cookies=false
 
 # start a terminal
 bindsym $mod+Return exec alacritty

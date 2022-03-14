@@ -13,5 +13,6 @@ PS1='[\u@\h \W]\$ '
 alias lynx="lynx -cookies=false"
 alias fm6000="fm6000 -dog --color=bright_magenta"
 alias clear="clear && fm6000"
+alias ytfzf="ytfzf -t --video-pref="242+249"
 
 fm6000

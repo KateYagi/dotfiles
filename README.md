@@ -3,90 +3,65 @@
 ## And my desktop too but only difference is I install steam and a web browser (currently ungoogled-chrome). Might explain that here eve
 ntually.
 
-- Install arch with archinstall
-- i3-gaps, Don't mess up the time zone because for some reason wifi doesn't work when you do that, lynx, ect... you know the rest.
-- chose Win Key in i3-config wizard, then go into terminal mode to not get flashbanged
+Install arch with archinstall
 
- crtl+alt+f2
+i3-gaps, Don't mess up the time zone because for some reason wifi doesn't work when you do that, lynx, ect... you know the rest.
 
+Choose Win Key in i3-config wizard, then go into terminal mode to not get flashbanged
+- crtl+alt+f2
 
-- Install alacritty
-- Change terminal to alacritty in i3-config
+Install alacritty
 
- sudo pacman -S alacritty 
-
- nano .config/i3/config
-
-
-- Go back to gui mode
-
- ctrl+alt+f7
+Change terminal to alacritty in i3-config
+- sudo pacman -S alacritty 
+- nano .config/i3/config
 
 
-- install paru's dependencies
-
- sudo pacman -S --needed base-devel
-
- sudo pacman -S git rustup
-
- rustup install stable
-
- rustup default stable
+Go back to gui mode
+- ctrl+alt+f7
 
 
-- Download this so you don't have to follow from memory / another device
-
-git clone https://github.com/KateYagi/dotfiles/
-
-
-- Install paru
-
- git clone https://aur.archlinux.org/paru.git
-
- cd paru
-
- makepkg -si
-
- cd ~
+Install paru's dependencies
+- sudo pacman -S --needed base-devel
+- sudo pacman -S git rustup
+- rustup install stable
+- rustup default stable
 
 
-- Unzip this so you can view these instruction now that you're already past the part where it would've been helpful
-
- paru -S unzip lolcat
-
- unzip dotfiles.zip
-
- lolcat dotfiles/README.md
+Download this so you don't have to follow from memory / another device
+- git clone https://github.com/KateYagi/dotfiles/
 
 
-- Install file management stuff, yeah I know I only need nnn or ranger but I don't feel like figuring out previews for nnn quite yet.
+Install paru
+- git clone https://aur.archlinux.org/paru.git
+- cd paru
+- makepkg -si
+- cd ~
 
- paru -S pcmanfm nnn ranger
+Unzip this so you can view these instruction now that you're already past the part where it would've been helpful
+
+- paru -S unzip lolcat
+- unzip dotfiles.zip
+- lolcat dotfiles/README.md
+
+Install file management stuff, yeah I know I only need nnn or ranger but I don't feel like figuring out previews for nnn quite yet.
+- paru -S pcmanfm nnn ranger
+
+Install decorative stuff
+- paru -S alacritty-themes picom polybar feh
+
+Set terminal theme to kitty so lynx looks better
+- alacritty-themes --create
+- alacritty-themes Kitty
+
+Install fm6000
+- sudo bash -c "$(curl https://raw.githubusercontent.com/anhsirk0/fetch-master-6000/master/install.sh)"
 
 
-- Install decorative stuff
+Install media stuff
+- paru -S ytfzf fzf ueberzug appimagelauncher rofi coreshot
 
- paru -S alacritty-themes picom polybar feh
-
-
-- Set terminal theme to kitty so lynx looks better
-
- alacritty-themes --create
-
- alacritty-themes Kitty
-
-
-- Install fm6000
-
- sudo bash -c "$(curl https://raw.githubusercontent.com/anhsirk0/fetch-master-6000/master/install.sh)"
-
-
-- Install media stuff
-
- paru -S ytfzf fzf ueberzug appimagelauncher rofi coreshot
-
-
-- Install system themeing for gui programs that need it
+Install system themeing for gui programs that need it
 - I don't feel like looking up how to do that but if a gui program like pcmanfm flashbangs me I install lxappearance and whatever the QT one is called. Dracula is nice.
 
 I yoinked the idea of $mod+Shift+Return from regolith, but I made that launch an alacritty window running lynx, and made $mod+Ctrl+Return launch chrome because it's the slightly less ergonomic bind, but I launch chrome way less often than lynx, since when I launch chrome I tend to keep it open for a while. 

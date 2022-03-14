@@ -2,6 +2,8 @@
 # Instructions to install everything again as quick as possible in the event I fuck up my laptop.
 ## And my desktop too but only difference is I install steam and a web browser (currently ungoogled-chrome). Might explain that here eventually.
 
+![This is an Screenshot](https://github.com/KateYagi/dotfiles/blob/main/screenshot.png?raw=true)
+
 - Install arch with archinstall
 - i3-gaps, Don't mess up the time zone because for some reason wifi doesn't work when you do that, lynx, ect... you know the rest.
 - chose Win Key in i3-config wizard, then go into terminal mode to not get flashbanged

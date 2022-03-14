@@ -33,7 +33,9 @@
 
 - Download this so you don't have to follow from memory / another device
 
-git clone https://github.com/KateYagi/dotfiles/
+ git clone https://github.com/KateYagi/dotfiles/
+ 
+ cat dotfiles/README.md
 
 - Install paru
 
@@ -45,12 +47,10 @@ git clone https://github.com/KateYagi/dotfiles/
 
  cd ~
 
-- Unzip this so you can view these instruction now that you're already past the part where it would've been helpful
+- Install lolcat for rainbow text. very important, much essential.
 
- paru -S unzip lolcat
-
- unzip dotfiles.zip
-
+ paru -S lolcat
+ 
  lolcat dotfiles/README.md
 
 - Install file management stuff, yeah I know I only need nnn or ranger but I don't feel like figuring out previews for nnn quite yet.

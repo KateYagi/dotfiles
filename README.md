@@ -12,9 +12,8 @@ i3-gaps, Don't mess up the time zone because for some reason wifi doesn't work w
 Choose Win Key in i3-config wizard, then go into terminal mode to not get flashbanged
 - crtl+alt+f2
 
-Install alacritty
 
-Change terminal to alacritty in i3-config
+Install alacritty and replace i3-sensible-terminal with alacritty in .config/i3/config
 - sudo pacman -S alacritty 
 - nano .config/i3/config
 
@@ -41,29 +40,27 @@ Install paru
 - makepkg -si
 - cd ~
 
-Install lolcat for rainbow text. very important, much essential.
-- paru -S lolcat
-- lolcat dotfiles/README.md
-
-Install file management stuff, yeah I know I only need nnn or ranger but I don't feel like figuring out previews for nnn quite yet.
-- paru -S pcmanfm nnn ranger
-
-Install decorative stuff
-- paru -S alacritty-themes picom polybar feh
 
 Set terminal theme to kitty so lynx looks better
+- paru -S alacritty-themes
 - alacritty-themes --create
 - alacritty-themes Kitty
+
+Install lolcat for rainbow text, (very important) and file management, decoration, and media related stuff.
+- paru -S lolcat pcmanfm nnn ranger picom polybar feh ytfzf fzf ueberzug appimagelauncher rofi coreshot
+
 
 Install fm6000
 - sudo bash -c "$(curl https://raw.githubusercontent.com/anhsirk0/fetch-master-6000/master/install.sh)"
 
 
-Install media stuff
-- paru -S ytfzf fzf ueberzug appimagelauncher rofi coreshot
+RaInBoWs!!1!
+- lolcat dotfiles/README.md
+
 
 Install system themeing for gui programs that need it
 - I don't feel like looking up how to do that but if a gui program like pcmanfm flashbangs me I install lxappearance and whatever the QT one is called. Dracula is nice.
+
 
 I yoinked the idea of $mod+Shift+Return from regolith, but I made that launch an alacritty window running lynx, and made $mod+Ctrl+Return launch chrome because it's the slightly less ergonomic bind, but I launch chrome way less often than lynx, since when I launch chrome I tend to keep it open for a while. 
 

@@ -180,7 +180,7 @@ exec --no-startup-id picom --experimental-backends
 exec feh --bg-max ~/wallpaper
 
 # Browser
- bindsym $mod+Ctrl+Return exec chromium
+ bindsym $mod+Ctrl+Return exec ~/Applications/ungoogled-chromium.AppImage
  bindsym $mod+Shift+Return exec alacritty -e lynx -cookies=false
 
 # start a terminal

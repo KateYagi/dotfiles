@@ -6,6 +6,7 @@ ntually.
 ![Screenshot](https://github.com/KateYagi/dotfiles/blob/main/screenshot.png?raw=true)
 Image used as wallpaper in screenshot:
 https://cremanata.tumblr.com/post/673199071629066242/ankha-but-she-got-new-outfits-twitter-ig
+
 https://static1.e926.net/data/05/2c/052c2213e1b683b245d519e011ea25b3.png
 
 Install arch with archinstall

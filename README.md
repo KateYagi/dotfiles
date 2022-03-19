@@ -3,7 +3,10 @@
 ## And my desktop too but only difference is I install steam and a web browser (currently ungoogled-chrome). Might explain that here eve
 ntually.
 
-![This is an Screenshot](https://github.com/KateYagi/dotfiles/blob/main/screenshot.png?raw=true)
+![Screenshot](https://github.com/KateYagi/dotfiles/blob/main/screenshot.png?raw=true)
+Image used as wallpaper in screenshot:
+https://cremanata.tumblr.com/post/673199071629066242/ankha-but-she-got-new-outfits-twitter-ig
+https://static1.e926.net/data/05/2c/052c2213e1b683b245d519e011ea25b3.png
 
 Install arch with archinstall
 
@@ -12,14 +15,9 @@ i3-gaps, Don't mess up the time zone because for some reason wifi doesn't work w
 Choose Win Key in i3-config wizard, then go into terminal mode to not get flashbanged
 - crtl+alt+f2
 
-
-Install alacritty and replace i3-sensible-terminal with alacritty in .config/i3/config
-- sudo pacman -S alacritty 
-- nano .config/i3/config
-
-
-Go back to gui mode
-- ctrl+alt+f7
+Download this so you don't have to follow from memory / another device
+- git clone https://github.com/KateYagi/dotfiles/
+- cat dotfiles/README.md
 
 
 Install paru's dependencies
@@ -29,11 +27,6 @@ Install paru's dependencies
 - rustup default stable
 
 
-Download this so you don't have to follow from memory / another device
-- git clone https://github.com/KateYagi/dotfiles/
-- cat dotfiles/README.md
-
-
 Install paru
 - git clone https://aur.archlinux.org/paru.git
 - cd paru
@@ -41,10 +34,17 @@ Install paru
 - cd ~
 
 
-Set terminal theme to kitty so lynx looks better
-- paru -S alacritty-themes
-- alacritty-themes --create
-- alacritty-themes Kitty
+Install alacritty (with sixel support!) and replace i3-sensible-terminal with alacritty in .config/i3/config
+- paru -S alacritty-sixel-git libsixel
+- nano .config/i3/config
+ - bindsym $mod+Return exec alacritty
+
+Optionally add it to IgnorePkg in /etc/pacman.conf if you don't wanna have to recompile it every update because at least on laptop that's kinda annoying. I'm sure there's a bin for it, or I could learn to make an aur but that sounds like a lot of resposibility.
+
+
+Go back to gui mode
+- ctrl+alt+f7
+
 
 Install lolcat for rainbow text, (very important) and file management, decoration, and media related stuff.
 - paru -S lolcat pcmanfm nnn ranger picom polybar feh ytfzf fzf ueberzug appimagelauncher rofi coreshot

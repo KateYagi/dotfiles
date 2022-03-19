@@ -171,10 +171,15 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
+bar {
+		font pango: Noto Sans Regular 10
+		status_command i3blocks
+}
+
 bindsym $mod+r mode "resize"
 
 # Startup Apps
-exec --no-startup-id polybar
+# exec --no-startup-id polybar
 exec --no-startup-id play -n
 exec --no-startup-id picom --experimental-backends
 exec feh --bg-max ~/wallpaper

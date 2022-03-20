@@ -17,13 +17,14 @@ Choose Win Key in i3-config wizard, then go into terminal mode to not get flashb
 - crtl+alt+f2
 
 Download this so you don't have to follow from memory / another device
+- sudo pacman -S --needed base-devel
+- sudo pacman -S git
 - git clone https://github.com/KateYagi/dotfiles/
 - cat dotfiles/README.md
 
 
-Install paru's dependencies
-- sudo pacman -S --needed base-devel
-- sudo pacman -S git rustup
+Install rustup, a dependency of paru.
+- sudo pacman -S rustup
 - rustup install stable
 - rustup default stable
 
@@ -48,7 +49,7 @@ Go back to gui mode
 
 
 Install lolcat for rainbow text, (very important) and file management, decoration, and media related stuff.
-- paru -S lolcat pcmanfm nnn ranger picom polybar feh ytfzf fzf ueberzug appimagelauncher rofi coreshot
+- paru -S lolcat pcmanfm nnn ranger picom feh ytfzf fzf ueberzug appimagelauncher rofi coreshot neomutt
 
 
 Install fm6000

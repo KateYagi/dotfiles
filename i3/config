@@ -179,7 +179,7 @@ bar {
 }
 
 # Startup Apps
-# exec --no-startup-id polybar
+exec --no-startup-id mousetrap -t 2
 exec --no-startup-id play -n
 exec --no-startup-id picom --experimental-backends
 exec feh --bg-max ~/wallpaper

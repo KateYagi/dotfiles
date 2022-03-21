@@ -1,0 +1,21 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
+
+# Custom
+
+# alias lynx="lynx -cookies=false Bookmarks.html"
+alias lynx="lynx -cookies=false"
+alias fm6000="fm6000 -dog --color=bright_magenta"
+alias clear="clear && fm6000"
+alias ytfzf="ytfzf -t --video-pref=242+249"
+alias fehwp="feh --bg-max ~/wallpaper"
+alias nano="nano -S"
+
+fm6000

@@ -3,6 +3,8 @@
 ## And my desktop too but only difference is I install steam and a web browser (currently ungoogled-chrome). Might explain that here eve
 ntually.
 
+Reminder to self: it's kinda necessary to type the edits here since uploading the file counts as erasing everything and retyping it.
+
 ![Screenshot](https://github.com/KateYagi/dotfiles/blob/main/screenshot.png?raw=true)
 Image used as wallpaper in screenshot:
 https://cremanata.tumblr.com/post/673199071629066242/ankha-but-she-got-new-outfits-twitter-ig
@@ -50,6 +52,10 @@ Go back to gui mode
 
 Install lolcat for rainbow text, (very important) and file management, decoration, and media related stuff.
 - paru -S lolcat pcmanfm nnn ranger picom feh ytfzf fzf ueberzug appimagelauncher rofi coreshot neomutt
+
+
+Install python stuff that won't install without overwriting existing files, I don't know why that's a thing.
+- paru -S --overwrite "*" mousetrap
 
 
 Install fm6000

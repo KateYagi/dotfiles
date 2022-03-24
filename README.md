@@ -44,7 +44,7 @@ Install working fork of neocities cli because the official one is broken at the 
 - git clone https://github.com/harrego/neocities-ruby
 - cd neocities-ruby
 - gem build neocities.gemspec
-- gem install neocities.VERSION_NUMBER.gem
+- gem install neocities-VERSION_NUMBER.gem
 
 - cd ~
 

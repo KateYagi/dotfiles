@@ -21,6 +21,7 @@ Choose Win Key in i3-config wizard, then go into terminal mode to not get flashb
 Download this so you don't have to follow from memory / another device
 - sudo pacman -S --needed base-devel
 - sudo pacman -S git
+- mkdir github && cd github
 - git clone https://github.com/KateYagi/dotfiles/
 - cat dotfiles/README.md
 
@@ -35,6 +36,16 @@ Install paru
 - git clone https://aur.archlinux.org/paru.git
 - cd paru
 - makepkg -si
+
+- cd ..
+
+
+Install working fork of neocities cli because the official one is broken at the moment
+- git clone https://github.com/harrego/neocities-ruby
+- cd neocities-ruby
+- gem build neocities.gemspec
+- gem install neocities.VERSION_NUMBER.gem
+
 - cd ~
 
 

@@ -15,7 +15,6 @@ alias lynx="lynx -cookies=false"
 alias fm6000="fm6000 -dog --color=bright_magenta"
 alias clear="clear && fm6000"
 alias ytfzf="ytfzf -t --video-pref=18 --detach"
-alias fehwp="feh --bg-max ~/wallpaper"
 alias nano="nano -S -a"
 alias neocities="~/github/neocities-ruby/bin/neocities"
 
